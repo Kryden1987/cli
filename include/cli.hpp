@@ -2,6 +2,8 @@
 #define CLI_HPP
 
 #include "help.hpp"
+#include <memory>
+#include <string>
 
 namespace cli
   {
@@ -15,7 +17,7 @@ namespace cli
 
     private:
 
-
+         
 
     };
 
@@ -38,7 +40,7 @@ namespace cli
 
     private:
 
-    Help h;
+    std::shared_ptr<Help> h;
     };
 
 
